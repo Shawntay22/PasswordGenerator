@@ -1,0 +1,70 @@
+/* Star Selector (Selects every element in the HTML file) */
+*{
+    /* includes the passing and border when setting a width or height for an element. */
+    box-sizing: border-box;
+}
+
+body{
+    background-color:aquamarine;
+    color: rgba(44, 44, 44, 0.815);
+    /* Flexbox is used here to center the div with the id of "Container" vertically and horizontally*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Setting the height to 100 vh so the div will be center vertically in the browser window. AKA viewport. */
+    height: 100vh;
+    /* Adding padding to the body element so the div container is NOT right up against the edge of the viewport on smaller screen sizes. */
+    padding: 25px;
+}
+
+h2{
+    /* Top Right/Left Bottom */
+    margin: 10px 0 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.btn {
+    background-color: rgba(127, 255, 212, 0.746);
+    /* Removes the default button border */
+    border: none;
+    /* Buttons do not inherit text color. Must apply text color directly to the element. */
+    color:rgba(93, 92, 92, 0.87);
+    /* Change the cursor when hovering over a button */
+    cursor: pointer;
+    padding: 8px 12px;
+}
+
+.option {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+#container {
+    background-color: rosybrown;
+    padding: 15px;
+    width: 350px;
+    border-radius: 5px;
+}
+
+#result-container {
+background-color: lavender;
+height: 50px;
+font-size: 18px;
+letter-spacing: 1px;
+padding: 10px 5px 10px 10px;
+/* Flex used to position the span and button elements */
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+#clipboard{
+    font-size: 20px;
+    background-color: rgba(148, 243, 211, 0.746);
+}
+
+#generate{
+    font-size: 16px;
+}
